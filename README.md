@@ -24,7 +24,7 @@ cd your-repo-name
 
 ### 2. Clone the Repository
 
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/artanton/test-task-develops-today-front.git
 
 ### 3. Install dependencies:
 npm install
