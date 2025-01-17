@@ -1,16 +1,11 @@
-// import { useRefreshQuery } from "../../redux/auth/sliceApi";
-import { IUser } from '../../helpers/Auth.types';
-import { useAuth } from '../../Hooks';
-import { Greating, HomePageContainer } from './HomePageStyled';
+import { CountryList } from './Components/countryList/countryList';
+import { HomePageContainer } from './HomePageStyled';
 
-const Home = () => {
-  // const {data: user} = useRefreshQuery()
-  const { user } = useAuth() as { user: IUser };
+const Home = () => { 
 
   return (
     <HomePageContainer>
-      <Greating>Hello {!user?.name ? '' : user?.name}!</Greating>
-      <Greating>Welcome to ToDo List App.</Greating>
+      <CountryList/>
     </HomePageContainer>
   );
 };
