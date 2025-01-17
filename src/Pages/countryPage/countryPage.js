@@ -19,7 +19,7 @@ const Countries = () => {
 
   const countryCode = searchParams.get('countryCode');
   const country = searchParams.get('country');
-  const { data: countryData, isLoading, isSuccess, error } = useFetchCountryQuery(
+  const { data: countryData, isSuccess, error } = useFetchCountryQuery(
     {
       countryCode,
       country,
